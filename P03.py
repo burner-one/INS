@@ -1,27 +1,19 @@
-#Demonstrate the working of MD5 (byte-byte)  
-  
+# Demonstrate the working of MD5 (byte-byte)
 import hashlib  
-  
-#encoding TYCSSTUDENTS using md5 hash fucntion  
-  
+
+# Encode 'TYCSSTUDENTS' using MD5 hash function
 result = hashlib.md5(b'TYCSSTUDENTS')  
-  
-#print the equivalent byte value.  
-  
-print("The byte equivalent of hash is :",end="")  
-  
+
+# Print the equivalent byte value
+print("The byte equivalent of hash is:", end=" ")
 print(result.digest())  
-  
+
+# String to hash
 str2hash = "TYCSSTUDENTS"  
-  
-#Encoding TYCSSTUDENTS using encode()  
-  
-#then sending to md5()  
-  
+
+# Encoding 'TYCSSTUDENTS' using encode() and sending to MD5
 result = hashlib.md5(str2hash.encode())  
-  
-#printing the equivalent hexadecdimal value  
-  
-print("The hexadecimal equivalent of hash is :",end = "")  
-  
-print(result.hexdigest()) 
+
+# Print the equivalent hexadecimal value
+print("The hexadecimal equivalent of hash is:", end=" ")
+print(result.hexdigest())  
